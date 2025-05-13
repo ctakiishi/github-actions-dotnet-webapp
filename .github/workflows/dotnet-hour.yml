@@ -1,0 +1,14 @@
+name: Hourly Job
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Every hour at minute 0
+
+jobs:
+  run-hourly-task:
+    name: Run Hourly Task
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print date and time
+        run: date
