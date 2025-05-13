@@ -19,8 +19,5 @@ jobs:
         with:
           dotnet-version: '8.0.407'
 
-      - name: Restore dependencies
-        run: dotnet restore
-
       - name: Run dotnet format
         run: dotnet format --verify-no-changes --severity warn
